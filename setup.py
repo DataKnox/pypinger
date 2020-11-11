@@ -4,11 +4,11 @@ with open('README.md', 'r') as file:
     long_description = file.read()
 
 setup(name='pypinger',
-      version='0.0.1',
+      version='1.0',
       description='Another way to ping in Python',
       url='https://github.com/DataKnox/pypinger',
       author='Knox Hutchinson',
-      author_email='me@alessandromaggio.com',
+      author_email='knox@knoxsdata.com',
       license='MIT',
       packages=['pypinger'],
       keywords=['ping', 'icmp', 'network'],
