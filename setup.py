@@ -6,7 +6,7 @@ with open('README.md', 'r') as file:
 setup(name='pypinger',
       version='0.0.1',
       description='Another way to ping in Python',
-      url='https://github.com/alessandromaggio/pythonping',
+      url='https://github.com/DataKnox/pypinger',
       author='Knox Hutchinson',
       author_email='me@alessandromaggio.com',
       license='MIT',
