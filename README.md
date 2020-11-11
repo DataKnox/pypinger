@@ -1,5 +1,11 @@
 # A Quick Way to Ping in Python
 
+## Install
+Currently in Test
+```
+pip install -i https://test.pypi.org/simple/ pypinger
+```
+
 ## From the CLI
 
 You can use Pyping from the CLI like so
