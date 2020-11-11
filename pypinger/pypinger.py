@@ -5,14 +5,14 @@ import platform
 import argparse
 
 
-def pyping():
+def pyping(subnet=None):
     parser = argparse.ArgumentParser()
     parser.add_argument('-s', '--subnet', type=str,
                         dest="subnet", help='Provide topology name.')
     args = parser.parse_args()
     if args.subnet:
         subnet = args.subnet
-    else:
+    elif not subnet:
         subnet = input("Please enter the network: ")
 
     alive_hosts = []
