@@ -3,7 +3,7 @@
 ## Install
 Currently in Test
 ```
-pip install -i https://test.pypi.org/simple/ pypinger
+pip install pypinger==2.0.3
 ```
 
 ## From the CLI
@@ -15,6 +15,14 @@ pyping -s 10.10.10.1
 Or ping a whole subnet with
 ```
 pyping -s 10.10.10.0/24
+```
+Specify ping count
+```
+pyping -s 10.15.0.0/28 -c 1
+```
+Suppress Printed Output
+```
+pyping -s 10.15.0.0/28 -c 2 -p False
 ```
 
 ## Programmatically 
@@ -31,6 +39,13 @@ Or you can be prompted at runtime for the hosts/subnet
 from pypinger import pyping
 
 hosts = pyping()
+print(hosts)
+```
+Specify counts and print suppression - Note that Printer is string!
+```
+from pypinger import pyping
+
+hosts = pyping(subnet="10.15.0.0/28", count=2, printer="False")
 print(hosts)
 ```
 
