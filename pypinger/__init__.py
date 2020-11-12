@@ -56,12 +56,14 @@ def pyping(subnet=None, count=5, printer="True"):
 
     if current_os == "windows":
         parameter = "-n"
+        interval = '255'
     else:
         parameter = "-c"
+        interval = '0.2'
     for i in network.hosts():
         i = str(i)
         toping[i] = subprocess.Popen(
-            ['ping', parameter, '5', '-i', '0.2', i], stdout=DEVNULL)
+            ['ping', parameter, '5', '-i', interval, i], stdout=DEVNULL)
     while toping:
         for i, proc in toping.items():
             if proc.poll() is not None:
