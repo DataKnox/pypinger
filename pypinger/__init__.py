@@ -16,7 +16,7 @@ def pyping(subnet=None, count=5, printer="True"):
     args = parser.parse_args()
     if args.subnet:
         subnet = args.subnet
-    elif not args.subnet:
+    elif not subnet:
         subnet = input("Please enter the network: ")
     if args.count:
         count = args.count

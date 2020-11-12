@@ -4,7 +4,7 @@ with open('README.md', 'r') as file:
     long_description = file.read()
 
 setup(name='pypinger',
-      version='2.0',
+      version='2.0.2',
       description='Another way to ping in Python',
       url='https://github.com/DataKnox/pypinger',
       author='Knox Hutchinson',
